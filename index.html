@@ -7,13 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<!-- #262626 -->
 <body class="bg-[#000]">
     <div class="flex">
-        <nav class="h-screen w-[240px] border-r-2 border-[#262626]"></nav>
+        <nav class="h-screen w-[240px] border-r-2 border-[#262626] max-2xl:w-[73px] max-md:hidden"></nav>
         <main class="grow flex justify-center">
-            <div class="h-screen max-w-[630px] w-full bg-white"></div>
-            <div class="h-screen max-w-[320px] w-full bg-slate-200"></div>
+            <div class="h-screen max-w-[630px] w-full bg-white flex flex-col">
+                <nav class="h-0 w-full"></nav>
+                <div class="grow w-full"></div>
+                <nav class="h-0 w-full"></nav>
+            </div>
+            <div class="h-screen max-w-[320px] w-full bg-slate-200 max-xl:hidden"></div>
         </main>
     </div>
 </body>
