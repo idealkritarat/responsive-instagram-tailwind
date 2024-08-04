@@ -8,17 +8,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-       ::-webkit-scrollbar {
+       body::-webkit-scrollbar {
             width: 10px;
         }
 
-        ::-webkit-scrollbar-track {
+        body::-webkit-scrollbar-track {
             background: #2D2D2D;
         }
 
-        ::-webkit-scrollbar-thumb {
+        body::-webkit-scrollbar-thumb {
             background: #6B6B6B;
             border-radius: 10px;
+        }
+
+        #feed div div::-webkit-scrollbar {
+            width: 0px;
         }
     </style>
 </head>
@@ -103,7 +107,7 @@
                 <nav class="h-0 w-full"></nav>
                 <div id="feed" class="grow w-full flex flex-col py-4 items-center">
                     <div class="h-[100px] w-full">
-                        <div class="h-full w-full flex items-center gap-2 overflow-hidden *:cursor-pointer">
+                        <div class="h-full w-full flex items-center gap-2 overflow-hidden *:cursor-pointer overflow-x-scroll">
                             <div class="flex flex-col items-center text-white">
                                 <span class="material-symbols-outlined text-7xl">
                                     account_circle
